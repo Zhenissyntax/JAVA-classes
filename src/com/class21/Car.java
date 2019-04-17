@@ -1,6 +1,5 @@
 package com.class21;
-
-public class Car {
+ class Car {
 public static String make="Toyota";
 String color;
 String model;

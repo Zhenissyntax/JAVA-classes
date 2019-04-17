@@ -1,0 +1,71 @@
+
+package com.class22;
+public class Test{
+	public static void main(String[] args) {
+		System.out.println("-------Creating Employee object---");
+		Employee emp=new Employee();
+		System.out.println(Employee.department);
+		Employee.work();
+		//emp.work not preffered way
+		emp.salary=90000;
+		emp.getPaid();
+		System.out.println("----Creating ScrumTeam object-----");
+		ScrumTeam st=new ScrumTeam();
+		ScrumTeam.work();
+		st.salary=100000;
+		st.getPaid();
+		st.artifacts="Product Backlog, Sprint Backlog,BurnDown chart";
+		st.ceremonies="Sprint grooming, Sprint Planning, Daily StandUp, Sprint Demo, Sprint Retro";
+		st.attendScrumMeetings();
+		st.workOnArtifacts();
+		System.out.println("Creating Developer object");
+		Developer dev=new Developer();
+		dev.work();
+		dev.salary=120000;
+		dev.getPaid();
+		dev.artifacts="Sprint Backlog";
+		dev.ceremonies="Sprint grooming, Sprint Planning, Daily StandUp, Sprint Demo, Sprint Retro";
+		dev.workOnArtifacts();
+		dev.attendScrumMeetings();
+		dev.code();
+		System.out.println("----Cerating Tester object");
+		Tester qa=new Tester();
+		qa.work();
+		qa.salary=120000;
+		qa.getPaid();
+		qa.artifacts="Sprint Backlog";
+		qa.ceremonies="Sprint grooming, Sprint Planning, Daily StandUp, Sprint Demo, Sprint Retro";
+		qa.workOnArtifacts();
+		qa.attendScrumMeetings();
+		qa.test();
+		System.out.println("----Cerating Bussines Annalyst object");
+		BussinessAnalyst ba=new BussinessAnalyst();
+		ba.work();
+		ba.salary=90000;
+		ba.getPaid();
+		ba.artifacts="Sprint Backlog";
+		ba.ceremonies="Sprint grooming, Sprint Planning, Daily StandUp, Sprint Demo, Sprint Retro";
+		ba.workOnArtifacts();
+		ba.attendScrumMeetings();
+		ba.writeUserStories();
+		System.out.println("----Cerating Scrum Master object");
+		ScrumMaster sm=new ScrumMaster();
+		sm.salary=120000;
+		sm.getPaid();
+		sm.artifacts="Burn Down Chart";
+		sm.ceremonies="Sprint grooming, Sprint Planning, Daily StandUp, Sprint Demo, Sprint Retro";
+		sm.workOnArtifacts();
+		sm.attendScrumMeetings();
+		sm.driveScrumMeetings();
+		System.out.println("----Cerating Product Owner object");
+		ProductOwner po=new ProductOwner();
+		po.salary=150000;
+		po.getPaid();
+		po.artifacts="Sprint Backlog";
+		po.ceremonies="Sprint grooming, Sprint Planning, Daily StandUp, Sprint Demo, Sprint Retro";
+		po.workOnArtifacts();
+		po.attendScrumMeetings();
+		po.prioritizeBlacklog();
+		po.talkToTheClient();
+	}
+}
