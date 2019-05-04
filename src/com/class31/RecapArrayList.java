@@ -30,7 +30,7 @@ public class RecapArrayList {
 			System.out.println(numbers.get(i));
 		}
 		//2 way using advanced for loop
-		System.out.println("----------using for each loop----------");
+		System.out.println("----------using for advanced loop----------");
 		for (Object num: numbers) {
 			System.out.println(num);
 		}
